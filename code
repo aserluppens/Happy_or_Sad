@@ -1,0 +1,13 @@
+message = input()
+
+happy_faces = message.count(':-)')
+sad_faces = message.count(':-(')
+
+if happy_faces == 0 and sad_faces == 0:
+    print('none')
+elif happy_faces == sad_faces:
+    print('unsure')
+elif happy_faces > sad_faces :
+    print('happy')
+else:
+    print('sad')
